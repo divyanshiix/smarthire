@@ -26,7 +26,7 @@ export const ApplicantCard: React.FC<ApplicantCardProps> = ({
     ? applicant.jobId.department
     : '';
 
-  const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000';
+  const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:5001';
   const resumeFullUrl = applicant.resumeUrl
     ? (applicant.resumeUrl.startsWith('http') ? applicant.resumeUrl : `${serverUrl}${applicant.resumeUrl}`)
     : null;
