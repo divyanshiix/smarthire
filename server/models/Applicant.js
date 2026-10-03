@@ -13,7 +13,7 @@ const applicantSchema = new mongoose.Schema(
       lowercase: true,
       trim: true,
       match: [
-        /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+        /^\S+@\S+\.\S+$/,
         'Please enter a valid email address'
       ]
     },
