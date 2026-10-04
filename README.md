@@ -12,6 +12,22 @@ SmartHire is a modern, production-ready internal recruitment platform built on t
 
 ---
 
+## 📸 Application Screenshots
+
+### 🔑 Authentication & Login Page
+![Recruiter Login](<./screenshots/Screenshot 2026-10-04 at 8.27.07 PM.png>)
+
+### 📊 Recruitment Analytics Dashboard & Pipeline
+![Recruitment Dashboard](<./screenshots/Screenshot 2026-10-04 at 8.28.25 PM.png>)
+
+### 💼 Job Openings Management
+![Job Postings](<./screenshots/Screenshot 2026-10-04 at 8.28.58 PM.png>)
+
+### 👥 Candidate Applicants & Resume Pipeline
+![Candidate Applications](<./screenshots/Screenshot 2026-10-04 at 8.29.09 PM.png>)
+
+---
+
 ## 🚀 Key Features
 
 ### 🔐 Auth & Security
@@ -52,6 +68,7 @@ smart-hire/
 │   │   ├── context/      # AuthContext & ThemeContext state
 │   │   ├── pages/        # Dashboard, Jobs, Applicants, Login, Register
 │   │   └── types/        # TypeScript interfaces & definitions
+├── screenshots/     # Application preview screenshots
 └── server/          # Node.js + Express.js (MVC Backend API)
     ├── config/       # MongoDB connection setup
     ├── controllers/  # Auth, Job, Applicant & Analytics controllers
