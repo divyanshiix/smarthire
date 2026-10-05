@@ -186,7 +186,7 @@ export const ApplicantsPage: React.FC<ApplicantsPageProps> = ({
   return (
     <div className="container animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       {/* Page Header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+      <div className="header-banner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800 }}>Candidate Applicants ({total})</h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
@@ -194,7 +194,7 @@ export const ApplicantsPage: React.FC<ApplicantsPageProps> = ({
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '0.75rem' }}>
+        <div className="header-banner-actions" style={{ display: 'flex', gap: '0.75rem' }}>
           <button onClick={handleExportCSV} className="btn btn-secondary">
             <Download size={18} />
             <span>Export CSV</span>
@@ -232,7 +232,7 @@ export const ApplicantsPage: React.FC<ApplicantsPageProps> = ({
       </div>
 
       {/* Search Bar & Job Select Filter */}
-      <div className="glass-panel" style={{ padding: '1rem', display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div className="glass-panel filter-bar" style={{ padding: '1rem', display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ position: 'relative', flex: '1 1 260px' }}>
           <Search size={18} style={{ position: 'absolute', left: '0.8rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
           <input

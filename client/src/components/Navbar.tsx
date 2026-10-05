@@ -21,7 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
   return (
     <header className="glass-panel" style={{ borderRadius: 0, borderTop: 'none', borderLeft: 'none', borderRight: 'none', position: 'sticky', top: 0, zIndex: 100 }}>
-      <div className="container" style={{ padding: '0.75rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div className="container navbar-container" style={{ padding: '0.75rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Brand */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer' }} onClick={() => setActiveTab('dashboard')}>
           <div style={{
@@ -48,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
         </div>
 
         {/* Nav Links */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <nav className="nav-menu" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
                   user.name.charAt(0).toUpperCase()
                 )}
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div className="user-badge-text" style={{ display: 'flex', flexDirection: 'column' }}>
                 <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>{user.name}</span>
                 <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{user.company}</span>
               </div>
@@ -118,7 +118,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             title="Sign out of SmartHire"
           >
             <LogOut size={16} />
-            <span style={{ display: 'none' }}>Logout</span>
           </button>
         </div>
       </div>

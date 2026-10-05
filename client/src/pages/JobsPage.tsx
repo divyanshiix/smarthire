@@ -161,7 +161,7 @@ export const JobsPage: React.FC<JobsPageProps> = ({
       </div>
 
       {/* Search & Filter Controls */}
-      <div className="glass-panel" style={{ padding: '1rem', display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div className="glass-panel filter-bar" style={{ padding: '1rem', display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ position: 'relative', flex: '1 1 240px' }}>
           <Search size={18} style={{ position: 'absolute', left: '0.8rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
           <input

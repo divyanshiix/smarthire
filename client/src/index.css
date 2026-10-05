@@ -302,3 +302,131 @@ dialog.modal-dialog::backdrop {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.25rem;
 }
+
+/* ==========================================================================
+   Responsive Media Queries (Mobile & Tablet Optimization)
+   ========================================================================== */
+
+/* Mobile Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0.85rem;
+  }
+
+  /* Grid Layout Adjustments */
+  .grid-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Responsive Forms & Controls */
+  .form-group-row,
+  .form-grid-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.85rem !important;
+  }
+
+  .input-field,
+  select.input-field {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Filter Bars Stack Vertically */
+  .filter-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .filter-bar > * {
+    width: 100% !important;
+  }
+
+  /* Navbar Responsive Modifications */
+  .navbar-container {
+    padding: 0.65rem 0.85rem !important;
+    flex-wrap: wrap !important;
+    gap: 0.65rem !important;
+  }
+
+  .nav-menu {
+    order: 3;
+    width: 100%;
+    justify-content: space-around !important;
+    overflow-x: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .nav-menu button {
+    padding: 0.4rem 0.6rem !important;
+    font-size: 0.75rem !important;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .nav-menu button span {
+    display: inline !important;
+  }
+
+  .user-badge-text {
+    display: none !important;
+  }
+
+  /* Modal Responsive Sizing */
+  dialog.modal-dialog {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    margin: 1rem auto !important;
+  }
+
+  /* Header & Banner Responsiveness */
+  .header-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1.25rem !important;
+  }
+
+  .header-banner-actions {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .header-banner-actions .btn {
+    flex: 1;
+  }
+}
+
+/* Extra Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .grid-stats {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.35rem !important;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .btn {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

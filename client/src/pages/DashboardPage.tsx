@@ -57,7 +57,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   return (
     <div className="container animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       {/* Header Banner */}
-      <div className="glass-panel" style={{ padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%)' }}>
+      <div className="glass-panel header-banner" style={{ padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%)' }}>
         <div>
           <h1 style={{ fontSize: '1.8rem', fontWeight: 800 }}>Recruitment Dashboard</h1>
           <p style={{ color: 'var(--text-secondary)', marginTop: '0.2rem' }}>
@@ -65,7 +65,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '0.75rem' }}>
+        <div className="header-banner-actions" style={{ display: 'flex', gap: '0.75rem' }}>
           <button onClick={openCreateJobModal} className="btn btn-primary">
             <Plus size={18} />
             <span>Create Job</span>
